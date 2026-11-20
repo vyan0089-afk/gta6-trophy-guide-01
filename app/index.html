@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <svg class="hero-art" viewBox="0 0 1280 180" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2b1055"/><stop offset="0.45" stop-color="#7597de"/>
+        <stop offset="0.7" stop-color="#ff7e5f"/><stop offset="1" stop-color="#feb47b"/>
+      </linearGradient>
+      <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ff9a5a"/><stop offset="1" stop-color="#1b2a4a"/>
+      </linearGradient>
+    </defs>
+    <rect width="1280" height="180" fill="url(#sky)"/>
+    <circle cx="640" cy="118" r="52" fill="#ffd166"/>
+    <circle cx="640" cy="118" r="62" fill="#ffd166" opacity="0.25"/>
+    <rect y="118" width="1280" height="62" fill="url(#sea)"/>
+    <g stroke="#ffd166" stroke-width="2" opacity="0.55">
+      <line x1="0" y1="132" x2="1280" y2="132"/><line x1="0" y1="146" x2="1280" y2="146"/>
+      <line x1="0" y1="162" x2="1280" y2="162"/>
+    </g>
+    <g fill="#14102a">
+      <path d="M120 180 L132 96 L144 180 Z"/>
+      <path d="M132 96 q-34 -18 -52 -6 q22 2 30 12 q-30 -8 -44 6 q26 0 34 10 q-24 2 -30 16 q20 -6 28 0 q-8 10 -4 22 q10 -14 22 -20 q4 14 16 22 q-2 -16 4 -24 q12 8 22 6 q-14 -12 -26 -14 q14 -6 20 -16 q-16 2 -20 -4 Z"/>
+      <path d="M1140 180 L1152 104 L1164 180 Z"/>
+      <path d="M1152 104 q-30 -16 -46 -5 q20 2 26 11 q-26 -7 -38 5 q22 0 30 9 q-20 2 -26 14 q18 -5 24 0 q-7 9 -3 19 q9 -12 19 -17 q3 12 14 19 q-2 -14 4 -21 q10 7 19 5 q-12 -10 -22 -12 q12 -5 17 -14 q-14 2 -18 -3 Z"/>
+    </g>
+    <g fill="#14102a" opacity="0.9">
+      <path d="M300 180 h680 l-20 -14 h-640 Z"/>
+      <rect x="330" y="150" width="26" height="16"/><rect x="372" y="146" width="34" height="20"/>
+      <rect x="880" y="148" width="30" height="18"/><rect x="926" y="142" width="40" height="24"/>
+    </g>
+  </svg>
+  <div class="hero-text">
+    <h1>Leonida Legend</h1>
+    <p class="tagline">GTA VI trophy guide &amp; tracker — all 55 PS5 trophies, with a roadmap to the platinum.</p>
+    <p class="offline-note">Fully offline. No online play is needed for any trophy. Progress is saved on this device only.</p>
+  </div>
+</header>
+
+<section class="progress-wrap" aria-label="Overall progress">
+  <div class="progress-line"><strong id="progressText">0 of 55 earned</strong><span id="progressPct">0%</span></div>
+  <div class="progress-bar"><div id="progressFill"></div></div>
+  <div class="grade-chips" id="gradeChips"></div>
+</section>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-view="checklist" class="tab active">Checklist</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap to Platinum</button>
+  <button type="button" data-view="missables" class="tab">Missables</button>
+  <button type="button" data-view="progress" class="tab">Progress &amp; Export</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view active">
+    <div class="controls">
+      <label>Search <input id="search" type="search" placeholder="Trophy name or word…"></label>
+      <label>Kind <select id="kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="strangers">Strangers</option>
+        <option value="activities">Activities</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="combat">Combat</option>
+        <option value="exploration">Exploration</option>
+        <option value="economy">Economy</option>
+        <option value="completion">100% completion</option>
+        <option value="misc">Misc</option>
+        <option value="platinum">Platinum</option>
+      </select></label>
+      <label>Grade <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select></label>
+      <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+      <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+      <label class="check spoiler"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+    </div>
+    <p class="hint" id="listHint"></p>
+    <div id="rows" class="cards"></div>
+  </section>
+
+  <section id="view-roadmap" class="view">
+    <h2>Roadmap to the platinum</h2>
+    <p>One playthrough is enough, and there is no mission replay — so keep a manual save before the finale. Work the stages in order; every stage names the trophies it unlocks.</p>
+    <ol class="roadmap">
+      <li><strong>Stage 1 — Story, Chapters 1–4.</strong> Play the story straight through: <em>Just Like Paradise</em>, <em>Paradise Lost</em>, <em>T**s Ass Drug Money</em>, <em>Vice City, Baby!</em>, <em>Top Of The World, Ma</em>, plus the named missions <em>Trust</em>, <em>Break the Bank</em>, <em>Family Matters</em>, <em>DWNFALL</em>, <em>Hi-Jacked</em> and <em>Snow Storm</em>. Meditate at every spot you find — the Chapter 1 spot is the one trophy other guides flag as possibly missable.</li>
+      <li><strong>Stage 2 — Final mission.</strong> Before the finale, save in a spare slot. Complete the final mission for the gold <em>You Gotta Know When to Get Off</em>. Free roam stays open afterwards.</li>
+      <li><strong>Stage 3 — Stranger strands &amp; character finales.</strong> Finish 8 stranger strands for the silver <em>Strangers &amp; Freaks</em>, including the finales for Andy, Kenton, Billy, Randy, Tyrone and Bret's hunt.</li>
+      <li><strong>Stage 4 — Activities.</strong> Try all 9 activity types (<em>Master of None</em>), gold all 42 Shooting Range challenges (<em>The Shootist</em>), win drone races at all 14 Top Fun locations, win 20 different races, beat Cal at fishing, finish an arcade game and bowl at Kolt &amp; Associates.</li>
+      <li><strong>Stage 5 — Collectibles, with counts.</strong> 3 collectible card sets, WAiNK at 100 locations, 100 vehicles discovered, 18 meditation spots, 50 challenges.</li>
+      <li><strong>Stage 6 — Combat &amp; heists.</strong> 250 stunts, 5 enemies in one Combat Focus, 5 bank vaults robbed and escaped, one armored truck, one illegal operation per gang (9 gangs), one jewelry store robbed undetected.</li>
+      <li><strong>Stage 7 — Exploration &amp; economy.</strong> All 52 areas of Leonida, a cocktail on Ocean Beach, $250,000 laundered in marked bills, $100,000 spent in shops, all 8 garage properties, 10 vehicles registered to Scooter Bros.</li>
+      <li><strong>Stage 8 — Cleanup &amp; choices.</strong> Sweep the missables list, finish the choice trophies, then chase <em>A Long Road</em> — 100% completion, the gold that takes the longest. The platinum <em>Vice Got a Price!</em> pops when the other 54 are done.</li>
+    </ol>
+    <p class="roadmap-note">Counts in this roadmap come from the official trophy descriptions: 250 stunts · 9 activity types · 42 Shooting Range challenges · 14 drone race locations · 20 races · 8 stranger strands · 18 meditation spots · 3 card sets · 100 WAiNK locations · 50 challenges · 100 vehicles · 5 bank vaults · 52 areas · 9 gangs · 8 garages · 10 registrations · $250,000 laundered · $100,000 spent.</p>
+  </section>
+
+  <section id="view-missables" class="view">
+    <h2>Missables — what to do before it is too late</h2>
+    <p>There is no mission replay, so the rule is simple: do the flagged thing the first time the chance appears. Everything else can be finished in free roam after the story. The one trophy other guides single out is <em>Positive Mental Attitude</em> — meditate at every spot, starting in Chapter 1.</p>
+    <div id="missableRows" class="cards"></div>
+  </section>
+
+  <section id="view-progress" class="view">
+    <h2>Progress &amp; export</h2>
+    <p id="progressSummary"></p>
+    <div id="kindStats" class="stats"></div>
+    <div class="export-row">
+      <button id="export" type="button">Export progress (JSON)</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button">Reset progress</button>
+    </div>
+    <p class="hint">Export saves a small JSON file with the names of your earned trophies. Import it on any device to restore your progress. Nothing leaves this device unless you export it yourself.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Guide text written for this app. Trophy names, descriptions and grades are the official list. Sources: Exophase · PSNProfiles. Full source links are in the README.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
